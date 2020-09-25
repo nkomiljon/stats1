@@ -3,6 +3,7 @@ package stats
 
 
 import (
+	"github.com/nkomiljon/hwbank/pkg/bank/types"
 	"fmt"
 )
 
