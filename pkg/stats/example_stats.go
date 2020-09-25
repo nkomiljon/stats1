@@ -1,9 +1,7 @@
 package stats
 
-
-
 import (
-	"github.com/nkomiljon/hwbank/pkg/bank/types"
+	"github.com/nkomiljon/hwbank/pkg/bank/types"	
 	"fmt"
 )
 
@@ -35,22 +33,22 @@ func ExampleAvg(){
 func ExampleTotalInCategory(){
 	payments := []types.Payment{
 		{
-			ID:2,
+			ID: 2,
 			Amount:53_00,
 			Category: "Cafe",
 		},
 		{
-			ID:1,
+			ID: 1,
 			Amount:51_00,
 			Category: "Cafe",
 		},
 		{
-			ID:3,
+			ID: 3,
 			Amount:52_00,
 			Category: "Restaurant",
 		},
 	}
-	inCategory := types.Category("auto")
+	inCategory := types.Category("Cafe")
 	totalInCategory := TotalInCategory(payments, inCategory)
 	fmt.Println(totalInCategory)
 
