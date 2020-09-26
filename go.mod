@@ -1,4 +1,4 @@
-module github.com/nkomiljon/statas1
+module github.com/nkomiljon/stats1
 
 go 1.15
 
